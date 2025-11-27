@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tos - xmu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .tos-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tos-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tos-section h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tos-section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .tos-section p, .tos-section li {
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .tos-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #66ea78;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 234, 120, 0.3);
+        }
+
+        .last-updated {
+            color: #999;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header class="floating-header">
+        <div class="header-content">
+            <nav class="nav-buttons">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="https://blog.xmuao.pw" class="nav-btn">blog</a>
+                <a href="https://testing.xmuao.pw" class="nav-btn">testing zone</a>
+                <a href="tos.html" class="nav-btn">tos</a>
+                <div class="language-selector">
+                    <button class="nav-btn lang-btn" onclick="toggleLangMenu()">🌐 <span id="current-lang">EN</span></button>
+                    <div id="lang-menu" class="lang-menu">
+                        <a href="#" onclick="changeLang('en')">🇬🇧 English</a>
+                        <a href="#" onclick="changeLang('fr')">🇫🇷 Français</a>
+                        <a href="#" onclick="changeLang('es')">🇪🇸 Español</a>
+                        <a href="#" onclick="changeLang('de')">🇩🇪 Deutsch</a>
+                        <a href="#" onclick="changeLang('ja')">🇯🇵 日本語</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="tos-container">
+        <a href="index.html" class="back-btn" data-lang="back-btn">← Back to Home</a>
+        
+        <div class="tos-section">
+            <h1 data-lang="tos-title">Terms of Service</h1>
+            <p class="last-updated" data-lang="tos-updated">Last Updated: November 27, 2025</p>
+
+            <h2 data-lang="tos-h1">1. Acceptance of Terms</h2>
+            <p data-lang="tos-p1">
+                By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.
+                If you do not agree to these terms, please do not use this website.
+            </p>
+
+            <h2 data-lang="tos-h2">2. Use License</h2>
+            <p data-lang="tos-p2">
+                Permission is granted to temporarily view the materials (information or software) on this website for personal, 
+                non-commercial transitory viewing only. This is the grant of a license, not a transfer of title.
+            </p>
+
+            <h2 data-lang="tos-h3">3. Disclaimer</h2>
+            <p data-lang="tos-p3">
+                The materials on this website are provided on an 'as is' basis. I make no warranties, expressed or implied, 
+                and hereby disclaim and negate all other warranties including, without limitation, implied warranties or 
+                conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property 
+                or other violation of rights.
+            </p>
+
+            <h2 data-lang="tos-h4">4. Limitations</h2>
+            <p data-lang="tos-p4">
+                In no event shall I or my suppliers be liable for any damages (including, without limitation, damages for 
+                loss of data or profit, or due to business interruption) arising out of the use or inability to use the 
+                materials on this website.
+            </p>
+
+            <h2 data-lang="tos-h5">5. Content and Intellectual Property</h2>
+            <p data-lang="tos-p5">
+                All content on this website, including but not limited to text, graphics, code, software, music, games, 
+                and other materials ("Content"), is owned by me (xmu) unless otherwise stated.
+            </p>
+            <ul>
+                <li data-lang="tos-li1">All original content remains my intellectual property</li>
+                <li data-lang="tos-li2">Music, creative works, and original projects are copyrighted by me</li>
+                <li data-lang="tos-li3">Code and projects may be shared under specific licenses (check individual repositories)</li>
+                <li data-lang="tos-li4">You may not claim my work as your own</li>
+            </ul>
+
+            <h2 data-lang="tos-h6">6. Files and Downloads</h2>
+            <p data-lang="tos-p6">
+                Files, software, programs, or any downloadable content provided on this website are offered "as is" 
+                without any guarantees or warranty. By downloading or using any files from this website:
+            </p>
+            <ul>
+                <li data-lang="tos-li5">You accept full responsibility for any consequences of using the files</li>
+                <li data-lang="tos-li6">I am not liable for any damage, data loss, or issues caused by files downloaded from this site</li>
+                <li data-lang="tos-li7">Files are provided for personal, non-commercial use unless explicitly stated otherwise</li>
+                <li data-lang="tos-li8">You may not redistribute, sell, or commercially exploit any files without written permission</li>
+                <li data-lang="tos-li9">Scan all downloaded files with antivirus software before use (though I make every effort to ensure safety)</li>
+                <li data-lang="tos-li10">Some files may require specific software, dependencies, or permissions to function properly</li>
+            </ul>
+
+            <h2 data-lang="tos-h7">7. User Conduct</h2>
+            <p data-lang="tos-p7">
+                When using any content, files, or services provided on this website, you agree not to:
+            </p>
+            <ul>
+                <li data-lang="tos-li11">Use the content for illegal purposes</li>
+                <li data-lang="tos-li12">Redistribute or sell my work without permission</li>
+                <li data-lang="tos-li13">Remove or modify any copyright notices or attribution</li>
+                <li data-lang="tos-li14">Use my content to harm others or create malicious software</li>
+                <li data-lang="tos-li15">Claim ownership of my original work</li>
+            </ul>
+
+            <h2 data-lang="tos-h8">8. Third-Party Content and Links</h2>
+            <p data-lang="tos-p8">
+                This website may contain links to external sites or reference third-party content. I am not responsible 
+                for the content, terms, or practices of external websites. Links are provided for convenience only.
+            </p>
+
+            <h2 data-lang="tos-h9">9. Privacy</h2>
+            <p data-lang="tos-p9">
+                I respect your privacy. This website does not collect personal information unless explicitly provided by you 
+                (e.g., through contact forms or emails). I do not sell or share your personal information with third parties.
+            </p>
+
+            <h2 data-lang="tos-h10">10. Nintendo and Emulation Disclaimer</h2>
+            <p data-lang="tos-p10">
+                Any references to emulation or Nintendo products are for educational and preservation purposes only. 
+                I do not condone piracy and encourage users to only use legally obtained software.
+            </p>
+
+            <h2 data-lang="tos-h11">11. Limitation of Liability</h2>
+            <p data-lang="tos-p11">
+                To the maximum extent permitted by law, I shall not be held liable for any direct, indirect, incidental, 
+                consequential, or punitive damages arising from your use of this website or any content, files, or 
+                services provided herein. This includes but is not limited to:
+            </p>
+            <ul>
+                <li data-lang="tos-li16">Loss of data or corrupted files</li>
+                <li data-lang="tos-li17">System damage or malfunction</li>
+                <li data-lang="tos-li18">Financial losses</li>
+                <li data-lang="tos-li19">Business interruption</li>
+                <li data-lang="tos-li20">Any other damages resulting from downloaded content</li>
+            </ul>
+
+            <h2 data-lang="tos-h12">12. Changes to Terms</h2>
+            <p data-lang="tos-p12">
+                I reserve the right to revise these terms of service at any time without notice. By using this website, 
+                you are agreeing to be bound by the then current version of these terms of service.
+            </p>
+
+            <h2 data-lang="tos-h13">13. Contact</h2>
+            <p data-lang="tos-p13">
+                If you have any questions about these Terms of Service, please contact me at: 
+                <a href="mailto:hi@xmuao.pw" style="color: #66ea78; text-decoration: none;">hi@xmuao.pw</a>
+            </p>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        no-copyright xmuao | 2025 - 2025
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>

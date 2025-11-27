@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xmu  - home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="floating-header">
+        <div class="header-content">
+            <nav class="nav-buttons">
+                <a href="https://blog.xmuao.pw" class="nav-btn">blog</a>
+                <a href="https://testing.xmuao.pw" class="nav-btn">testing zone</a>
+                <a href="tos.html" class="nav-btn">tos</a>
+                <a href="https://files.xmuao.pw" class="nav-btn">files</a>
+                <div class="language-selector">
+                    <button class="nav-btn lang-btn" onclick="toggleLangMenu()">🌐 <span id="current-lang">EN</span></button>
+                    <div id="lang-menu" class="lang-menu">
+                        <a href="#" onclick="changeLang('en')">🇬🇧 English</a>
+                        <a href="#" onclick="changeLang('fr')">🇫🇷 Français</a>
+                        <a href="#" onclick="changeLang('es')">🇪🇸 Español</a>
+                        <a href="#" onclick="changeLang('de')">🇩🇪 Deutsch</a>
+                        <a href="#" onclick="changeLang('ja')">🇯🇵 日本語</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="profile-card">
+            <div class="profile-photo">
+                <img src="profile.png" alt="Profile Photo">
+            </div>
+            <h1>xmu</h1>
+            <p class="tagline">random developer or some stuff</p>
+        </div>
+
+        <div class="section">
+            <h2 data-lang="about-title">about me</h2>
+            <p class="about-text">
+                <span data-lang="about-p1">i am a french person</span><br><br>
+                <span data-lang="about-p2">i like making music, random programs and sometimes i make games too lol</span><br><br>
+                <span data-lang="about-p3">i like to play Minecraft and emulation most of the time (nintendo pls dont sue me)</span>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 data-lang="skills-title">things i know</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="logo">🔵</div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="card">
+                    <div class="logo">🟢</div>
+                    <span>Node.js</span>
+                </div>
+                <div class="card">
+                    <div class="logo">🍵</div>
+                    <span>Java</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 data-lang="projects-title">my projects</h2>
+            <div class="cards-grid">
+                <a href="https://nintencube.fr/?utm-source=xmuao.pw" class="card project-card">
+                    <div class="project-icon">🔴</div>
+                    <span>NintenCube</span>
+                </a>
+                <a href="https://client.nintencube.fr/?utm-source=xmuao.pw" class="card project-card">
+                    <div class="project-icon">🔵</div>
+                    <span>Cubic Client</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 data-lang="socials-title">my socials</h2>
+            <div class="cards-grid">
+                <a href="https://github.com/xmuaop" class="card contact-card">
+                    <div class="contact-icon">🐙</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://youtube.com/@xmuao" class="card contact-card">
+                    <div class="contact-icon">🎥</div>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://twitter.com/@_xmuao" class="card contact-card">
+                    <div class="contact-icon">🤬</div>
+                    <span>Twitter</span>
+                </a>
+                <a href="mailto:hi@xmuao.pw" class="card contact-card">
+                    <div class="contact-icon">📧</div>
+                    <span>Email</span>
+                </a>
+                <a href="https://open.spotify.com/artist/4XDSdaHKp3PoljRnyXNFRm" class="card contact-card">
+                    <div class="contact-icon">🟢</div>
+                    <span>Spotify</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        no-copyright xmuao | 2025 - 2025
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="translations.js"></script>
+</body>
+</html>
